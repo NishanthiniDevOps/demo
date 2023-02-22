@@ -1,8 +1,13 @@
 server {
     listen 80;
+    listen 443 ssl;
     server_name democrance www.democrance;
     root /var/www/democrance;
+    ssl_certificate      /etc/nginx/ssl/democrance.crt;
+    ssl_certificate_key  /etc/nginx/ssl/democrance.key;
 
+    ssl_session_cache shared:SSL:1m;
+    ssl_session_timeout  5m;
     index index.html index.htm index.php;
 
     location / {
