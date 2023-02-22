@@ -5,10 +5,10 @@ Class dbObj{
 
   public function __construct()
   {
-    $this->servername = "demo.cyz5xzfnvpjf.us-east-1.rds.amazonaws.com";
-    $this->username = "postgres";
-    $this->password = "postgres";
-    $this->dbname = "postgres";
+    $this->servername = "";
+    $this->username = "";
+    $this->password = "";
+    $this->dbname = "";
     $this->port = "5432";
   }
   function getConnstring() {
